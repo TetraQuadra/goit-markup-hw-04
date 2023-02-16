@@ -341,7 +341,6 @@ img {
 
 .portfolio-projects-item {
   width: calc((100% - 24px * 2) / 3);
-  border: 1px solid var(--accent-color);
 }
 
 .portfolio-projects-item:nth-child(3n + 3) {
@@ -351,10 +350,16 @@ img {
 .portfolio-projects-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
+.portfolio-project-link {
+  border: 1px solid var(--accent-color);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
-.portfolio-projects-item:hover,
-.portfolio-projects-item:focus {
-  border: 1px solid #f4f4fd;
+.portfolio-project-link:hover,
+.portfolio-project-link:focus {
+  border: 1px solid var(--light-accent-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
