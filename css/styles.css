@@ -155,6 +155,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -192,21 +194,16 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.features-icons-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
+
 .features-icon-item {
   background-color: var(--light-accent-color);
   flex-basis: calc((100% - 24px * 3) / 4);
+  height: 112px;
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .features-list {
@@ -388,10 +385,9 @@ img {
 }
 .customers-list-item {
   flex-basis: calc((100% - 24px * 5) / 6);
-  height: 88px;
 }
 .customer-link {
-  height: 100%;
+  height: 88px;
   width: 100%;
   display: flex;
   border: 1px solid var(--deemphasized-color);
@@ -426,7 +422,6 @@ img {
 .footer .container {
   display: flex;
   align-items: center;
-  gap: 120px;
 }
 .footer-social-media-title {
   font-size: 16px;
@@ -464,4 +459,7 @@ img {
 .social-links-list-footer svg {
   align-items: center;
   justify-content: center;
+}
+.motto-container {
+  margin-right: 120px;
 }
